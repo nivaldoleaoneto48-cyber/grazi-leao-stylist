@@ -20,7 +20,7 @@ dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.
 function draftMessage(){
  const name=$('#name').value.trim(); const project=$('#project').value.trim();
  const message=`Olá, Grazi! Meu nome é ${name}. Conheci seu site e gostaria de conversar sobre um projeto.\n\n${project}`;
- return $('#channel').value==='email' ? `mailto:grazi-silva@hotmail.com?subject=${encodeURIComponent('Novo projeto — '+name)}&body=${encodeURIComponent(message)}` : `https://wa.me/5562984580716?text=${encodeURIComponent(message)}`;
+ return $('#channel').value==='email' ? `mailto:grazileaostylist@gmail.com?subject=${encodeURIComponent('Novo projeto — '+name)}&body=${encodeURIComponent(message)}` : `https://wa.me/5562984580716?text=${encodeURIComponent(message)}`;
 }
 $('#brief-form').addEventListener('submit',e=>{e.preventDefault();const link=$('#send-message');link.href=draftMessage();link.hidden=false;link.textContent=$('#channel').value==='email'?'Abrir no e-mail ↗':'Abrir no WhatsApp ↗';link.focus();});
 $('#brief-form').addEventListener('input',()=>{$('#send-message').hidden=true;});
