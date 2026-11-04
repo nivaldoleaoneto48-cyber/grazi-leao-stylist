@@ -37,3 +37,5 @@ footer{gap:30px;flex-wrap:wrap}.three-words span{font-size:14px}.monogram small{
 
 /* Ivory footer symbol matching the wordmark (#f4f1e9). */
 .footer-symbol img{filter:grayscale(1) contrast(10) invert(1) sepia(1) saturate(.36) hue-rotate(353deg) brightness(.95);mix-blend-mode:screen}
+
+.footer-symbol img{filter:grayscale(1) contrast(10) invert(1) url(#footer-logo-ivory);mix-blend-mode:lighten}
